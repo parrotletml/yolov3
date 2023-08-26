@@ -69,7 +69,7 @@ class YOLODataModule(pl.LightningDataModule):
                     img_dir=self.IMG_DIR,
                     label_dir=self.LABEL_DIR,
                     anchors=self.hparams.ANCHORS,
-                    mosaic_prob=0.8,
+                    mosaic_prob=0.5,
                 )
             )
 
