@@ -115,20 +115,20 @@ To adapt the model for different image scales, follow these steps:
 Here's a snapshot of the training results from the 39th epoch:
 
 - **Epoch**: 39
-- **Time Elapsed**: 4 minutes and 56 seconds
+- **Time Elapsed**: 3 minutes and 10 seconds
 - **Iterations**: 518 iterations completed
-- **Iteration Rate**: Approximately 1.75 iterations per second
-- **Validation Loss**: 3.180
-- **Validation Class Accuracy**: 91.20%
-- **Validation No-Object Accuracy**: 96.80%
-- **Validation Object Accuracy**: 92.20%
-- **Training Loss**: 5.010
-- **Training Class Accuracy**: 89.50%
-- **Training No-Object Accuracy**: 93.20%
-- **Training Object Accuracy**: 96.90
+- **Iteration Rate**: Approximately 2.72 iterations per second
+- **Validation Loss**: 3.160
+- **Validation Class Accuracy**: 89.40%
+- **Validation No-Object Accuracy**: 95.20%
+- **Validation Object Accuracy**: 94.10%
+- **Training Loss**: 3.010
+- **Training Class Accuracy**: 86.30%
+- **Training No-Object Accuracy**: 92.20%
+- **Training Object Accuracy**: 96.40%
 
 ```
-Epoch 39: 100%|██████████| 518/518 [04:56<00:00,  1.75it/s, v_num=308, val_loss=3.180, val_class_accuracy=91.20, val_no_obj_accuracy=96.80, val_obj_accuracy=92.20, train_loss=5.010, train_class_accuracy=89.50, train_no_obj_accuracy=93.20, train_obj_accuracy=96.90]
+Epoch 39: 100%|██████████| 518/518 [03:10<00:00,  2.72it/s, v_num=310, val_loss=3.160, val_class_accuracy=89.40, val_no_obj_accuracy=95.20, val_obj_accuracy=94.10, train_loss=3.010, train_class_accuracy=86.30, train_no_obj_accuracy=92.20, train_obj_accuracy=96.40]
 ```
 
 
@@ -161,12 +161,11 @@ The mean average precision (mAP) values provide a comprehensive overview of mode
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃        Test metric        ┃       DataLoader 0        ┃
 ┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
-│         map_epoch         │     0.719588041305542     │
-│    test_class_accuracy    │     95.84803771972656     │
-│   test_no_obj_accuracy    │     96.89715576171875     │
-│     test_obj_accuracy     │     94.87516784667969     │
+│         map_epoch         │    0.6514168381690979     │
+│    test_class_accuracy    │     92.69973754882812     │
+│   test_no_obj_accuracy    │     95.41680145263672     │
+│     test_obj_accuracy     │     95.27546691894531     │
 └───────────────────────────┴───────────────────────────┘
 ```
 
 In summary, our repository showcases an elaborate training journey, employing advanced techniques and strategies to mold the YOLOv3 model for optimal performance across different image scales. The provided results, graphs, and mAP values offer comprehensive insights into the model's training and evaluation.
-
