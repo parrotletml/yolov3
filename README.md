@@ -114,18 +114,26 @@ To adapt the model for different image scales, follow these steps:
 
 Here's a snapshot of the training results from the 39th epoch:
 
+### Epoch 39 Training Update
+
 - **Epoch**: 39
-- **Time Elapsed**: 3 minutes and 10 seconds
+- **Time Elapsed**: 6 minutes and 27 seconds
 - **Iterations**: 518 iterations completed
-- **Iteration Rate**: Approximately 2.72 iterations per second
-- **Validation Loss**: 3.160
-- **Validation Class Accuracy**: 89.40%
-- **Validation No-Object Accuracy**: 95.20%
-- **Validation Object Accuracy**: 94.10%
-- **Training Loss**: 3.010
-- **Training Class Accuracy**: 86.30%
-- **Training No-Object Accuracy**: 92.20%
-- **Training Object Accuracy**: 96.40%
+- **Iteration Rate**: Approximately 1.34 iterations per second
+
+#### Validation Metrics
+
+- **Validation Loss**: 2.640
+- **Validation Class Accuracy**: 91.80%
+- **Validation No-Object Accuracy**: 95.90%
+- **Validation Object Accuracy**: 95.50%
+
+#### Training Metrics
+
+- **Training Loss**: 4.640
+- **Training Class Accuracy**: 91.50%
+- **Training No-Object Accuracy**: 94.00%
+- **Training Object Accuracy**: 97.40%
 
 ```
 Epoch 39: 100%|██████████| 518/518 [03:10<00:00,  2.72it/s, v_num=310, val_loss=3.160, val_class_accuracy=89.40, val_no_obj_accuracy=95.20, val_obj_accuracy=94.10, train_loss=3.010, train_class_accuracy=86.30, train_no_obj_accuracy=92.20, train_obj_accuracy=96.40]
@@ -161,10 +169,10 @@ The mean average precision (mAP) values provide a comprehensive overview of mode
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃        Test metric        ┃       DataLoader 0        ┃
 ┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
-│         map_epoch         │    0.6514168381690979     │
-│    test_class_accuracy    │     92.69973754882812     │
-│   test_no_obj_accuracy    │     95.41680145263672     │
-│     test_obj_accuracy     │     95.27546691894531     │
+│         map_epoch         │    0.7876859903335571     │
+│    test_class_accuracy    │     96.89830017089844     │
+│   test_no_obj_accuracy    │     96.0931396484375      │
+│     test_obj_accuracy     │     97.3210678100586      │
 └───────────────────────────┴───────────────────────────┘
 ```
 
