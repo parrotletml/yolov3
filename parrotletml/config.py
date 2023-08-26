@@ -39,8 +39,8 @@ scale = 1.1
 IMAGE_SIZE = 416  # Standard IMAGE SIZE
 S = [IMAGE_SIZE // 32, IMAGE_SIZE // 16, IMAGE_SIZE // 8]
 # A hack to make images of multiple sizes
-TARGET_IMAGE_SIZE = list(np.array([13]) * 32)
-SA = {TIS: [TIS // 32, TIS // 16, TIS // 8] for TIS in list(np.array([13]) * 32)}
+TARGET_IMAGE_SIZE = list(np.array([13, 15]) * 32)
+SA = {TIS: [TIS // 32, TIS // 16, TIS // 8] for TIS in list(np.array([13, 15]) * 32)}
 
 
 
